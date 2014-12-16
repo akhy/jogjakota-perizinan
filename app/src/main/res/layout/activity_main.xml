@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/jogja" />
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ddffFFff"
+        android:divider="@drawable/divider_16dp"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:showDividers="middle"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:textColor="@color/primaryDark"
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            tools:text="Selamat Datang" />
+
+        <Button
+            android:id="@+id/open_type_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Perizinan Baru" />
+
+        <Button
+            android:id="@+id/open_status_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cek Status Perizinan" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Perizinan</string>
+    <string name="welcome">Selamat Datang\n<bold>\"%s\"</bold></string>
+</resources>
